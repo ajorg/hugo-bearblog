@@ -146,10 +146,50 @@
       color: var(--visited-color);
   }
 
+  :root {
+      --width: 720px;
+  }
+
+  body, main {
+      line-height: 1.5;
+  }
+
   @media print {
     header,
     footer {
       display: none
     }
+  }
+
+  blockquote {
+      padding-left: 1em;
+  }
+
+  code {
+      background-color: unset;
+      color: unset;
+      font-size: larger;
+      padding: unset;
+  }
+
+  pre code {
+      background-color: #202020;
+      color: #bbb;
+      display: block;
+      overflow-x: auto;
+      padding: 1em;
+      white-space: pre-wrap;
+  }
+
+  .highlight, .code {
+      padding: unset unset;
+      background-color: unset;
+      color: unset;
+      margin-block-start: unset;
+      margin-block-end: unset;
+  }
+
+  pre {
+      margin: 0px;
   }
 </style>
